@@ -28,9 +28,6 @@ SECRET_KEY = 'django-insecure-0xai_0!i3g)4a!pl)%us1v^%*=29&c1j7$bekts@1ge#l+5dpk
 
 PRODUCTION = os.getenv('PRODUCTION', 'False').lower() == 'true'
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
 ALLOWED_HOSTS = ["localhost", "127.0.0.1", "https://pbp.cs.ui.ac.id/hillary-elizabeth/footballnews", "hillary-elizabeth-footballnews.pbp.cs.ui.ac.id"]
 
 CSRF_TRUSTED_ORIGINS = [
@@ -154,5 +151,3 @@ STATICFILES_DIRS = [
 ]
 
 STATIC_ROOT = BASE_DIR / 'staticfiles'
-
-DEBUG = True
